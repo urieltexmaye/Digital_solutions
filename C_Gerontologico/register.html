@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/register.css"> 
+    
+    <title>Registro</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="form_div">
+        <h1>Registro</h1>
+        <form action="DevBackend/create_user.php" method="POST">
+            <div>
+                <label for="name">Nombre(s)</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="last_name">Apellidos</label>
+                <input type="text" name="last_name" id="last_name" required>
+            </div>
+            <div>
+                <label for="number_phone">Teléfono</label>
+                <input type="tel" name="number_phone" id="number_phone" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="Talleres">
+                <div>Talleres</div>
+                <label for="Danza">Danza</label>
+                <input type="checkbox" name="Danza" value="1" id="Danza">
+                <label for="Pintura">Pintura</label>
+                <input type="checkbox" name="Pintura" value="1" id="Pintura">
+                <label for="Cocina">Cocina</label>
+                <input type="checkbox" name="Cocina" value="1" id="Cocina">
+            </div>
+            <h2>Tutor</h2>
+            <div>
+                <label for="tutor_name">Nombre(s)</label>
+                <input type="text" name="tutor_name" id="tutor_name">
+            </div>
+            <div>
+                <label for="tutor_last_name">Apellidos</label>
+                <input type="text" name="tutor_last_name" id="tutor_last_name">
+            </div>
+            <div>
+                <label for="tutor_number_phone">Teléfono</label>
+                <input type="number" name="tutor_number_phone" id="tutor_number_phone">
+            </div>
+            <div>
+                <label for="tutor_direccion">Dirección</label>
+                <input type="text" name="tutor_direccion" id="tutor_direccion">
+            </div>
+            <div>
+                <input type="submit" value="Guardar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
