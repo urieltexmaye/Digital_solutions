@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/talleres.css">
+    <link rel=" icon" type="image/ico" href="iconos/LogoIcon.png"/>
+    <title>Talleres</title>
+</head>
+<body>
+    <div class="filtroMenu"></div>
+    <div id="barra_de_navegacion" class="pagina-actual"></div>
+
+
+    <script src="js/navegacion.js"></script>
+
+    <style>
+        .slider-container{
+            width: 65%;
+            margin: 0px auto;
+        }
+        .item {
+            height: 300px;
+        }
+        .slider{
+            top: 50px;
+            height: 300px;
+            border: 7px solid #fff;
+        }
+        .icon1 {
+        max-width: 60px;
+        height: auto;
+    }
+
+    @media (max-width: 600px){
+        .slider-container{
+            width: 100%;
+        }
+    }
+
+    </style>
+
+    <div class="container1">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img/c1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/c2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/c3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/c4.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/c5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><img class="icon1" src="iconos/izquierda.png" alt=""></button>
+                    <button id="next"><img class="icon1" src="iconos/derecha.png" alt=""></button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/inicio.js"></script>
+    </div>
+
+    <div class="grid">
+        <h2 id="grid_0">Talleres</h2>
+        <div id="grid_1"></div>
+        <div id="grid_2">
+            <h1>Cocina</h1>
+            <p>La cocina es más que preparar alimentos; es una experiencia compartida 
+            llena de sabor y aprendizaje. En nuestro taller de cocina, te invitamos 
+            a descubrir nuevos sabores, técnicas culinarias y disfrutar de la convivencia. </p>
+        </div>
+        <div id="grid_3"></div>
+        <div id="grid_4">
+            <h1>Danza</h1>
+            <p>Nuestro taller de danza exploramos 
+                movimientos que no solo fortalecen el cuerpo, sino que también elevan el espíritu. 
+                Descubre la alegría de la expresión corporal mientras te sumerges en la música y 
+                te conectas contigo mismo y con otros. </p>
+        </div>
+        <div id="grid_5"></div>
+        <div id="grid_6">
+            <h1>Pintura</h1>
+            <p>Explora tu creatividad y da rienda suelta a tu expresión artística en nuestro taller 
+                de pintura en el Centro Gerontológico Integral. Con pinceles, colores y lienzo, 
+                te invitamos a crear obras que reflejen tu imaginación única.</p>
+        </div>
+    </div>
+
+    <div class="grid-movil">
+        <h2 id="grid_0">Talleres</h2>
+        <div id="grid_1"></div>
+        <div id="grid_2">
+            <h1>Cocina</h1>
+            <p>La cocina es más que preparar alimentos; es una experiencia compartida 
+            llena de sabor y aprendizaje. En nuestro taller de cocina, te invitamos 
+            a descubrir nuevos sabores, técnicas culinarias y disfrutar de la camaradería. </p>
+        </div>
+        <div id="grid_3"></div>
+        <div id="grid_4">
+            <h1>Danza</h1>
+            <p>Nuestro taller de danza exploramos 
+                movimientos que no solo fortalecen el cuerpo, sino que también elevan el espíritu. 
+                Descubre la alegría de la expresión corporal mientras te sumerges en la música y 
+                te conectas contigo mismo y con otros. </p>
+        </div>
+        <div id="grid_5"></div>
+        <div id="grid_6">
+            <h1>Pintura</h1>
+            <p>Explora tu creatividad y da rienda suelta a tu expresión artística en nuestro taller 
+                de pintura en el Centro Gerontológico Integral. Con pinceles, colores y lienzo, 
+                te invitamos a crear obras que reflejen tu imaginación única.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><b>2023</b></p>
+        <p>Centro Gerontológico Integral</p>
+    </footer>
+</body>
+</html>

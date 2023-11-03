@@ -1,0 +1,169 @@
+body {
+    font-family: Montserrat;
+}
+
+.container1 {
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    position: relative;
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+
+}
+
+.container2 {
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: aquamarine;
+}
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 1fr 1fr;
+
+    height: 900px;
+}
+
+#grid_0 {
+    grid-column: 1/4;
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+}
+
+#grid_1 {
+    background-image: url(../img/danza.jpg);
+}
+
+#grid_3 {
+    background-image: url(../img/pintura.jpg);
+}
+
+#grid_5 {
+    background-image: url(../img/cocina.jpg);
+}
+
+#grid_2, #grid_4, #grid_6 {
+    margin: 20px;
+
+}
+
+#grid_1, #grid_3, #grid_5 {
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+
+h1{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin: 40px;
+}
+
+p{
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+}
+/* footer */
+
+footer {
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+    text-align: center;
+    color: black;
+}
+/* Carrusel de imagenes */
+
+@media (max-width: 900px) {
+    .grid {
+        max-height: 750px;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+.grid-movil {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .grid{
+        display: none;
+    }
+
+    .grid-movil {
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 7% 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        height: auto;
+    }
+
+    #grid_0 {
+        grid-column: 1/2;
+        font-size: 28px;
+    }
+    
+
+    h1{
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        margin: 40px;
+    }
+    
+    p{
+        text-align: justify;
+        color: #fff;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    h1{
+        text-align: center;
+        font-size: 22px;
+        color: #fff;
+        margin: 40px;
+    }
+    
+    p{
+        text-align: justify;
+        color: #fff;
+        font-size: 14px;
+    }
+}

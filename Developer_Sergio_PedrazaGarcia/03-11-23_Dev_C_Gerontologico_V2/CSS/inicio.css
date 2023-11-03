@@ -1,0 +1,606 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #005187;
+    font-family: Montserrat;  
+}
+
+.tex {
+    background-image: url('../img/textura2.png');
+    background-repeat: repeat;
+}
+
+/* BARRA DE NAVEGACIÓN >> */
+header {
+    background-color: #ffffff;
+    padding: 10px 30px 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    width: 220px; 
+    height: auto; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 2px solid rgb(13, 77, 216);
+}
+
+.bottom:hover {
+    border-bottom: none;
+}
+
+
+
+nav a.pagina-actual {
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(13, 77, 216);
+}
+
+
+
+#perfil-item {
+    cursor: pointer;
+    position: relative; /* Añade esta línea para que las opciones se posicionen con respecto a este elemento */
+}
+
+.perfil-options {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 4px 0px 0px 0px;
+    padding: 0;
+    position: absolute;
+    display: none;
+    background-color: #ffffff; /* Agrega un fondo blanco para las opciones (puedes ajustar esto según tu diseño) */
+    border: 4px solid #368faa; /* Agrega un borde para separar las opciones del resto del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto visual */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    height: 50px;
+    text-align: right;
+    width: 156px;
+}
+
+#perfil-item:hover .perfil-options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: -30px;
+    z-index: 1;
+}
+
+.perfil-options li {
+    margin-right: 0; 
+}
+
+.perfil-options a {
+    padding: 10px; 
+    color: #000; 
+    line-height: 1.5;
+}
+
+.perfil-options a:hover {
+    border-bottom: none; 
+    color: #00299b;
+}
+
+a img{
+    width: 20px;
+    height: auto;
+    position: absolute;
+    margin: 0px 0px 0px 10px;
+}
+
+/* << BARRA DE NAVEGACIÓN */
+
+/* CARRUCEL DE IMAGENES >> */
+
+.carrucel-texto {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr); /* Repetir para cada contenedor */
+    gap: 0px;
+    width: 100%;
+    height: 0px;
+    margin: 0;
+}
+
+.contain-text {
+    float: left;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 800;
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    color: #fff;
+}
+
+.contain-text h3{
+    font-size: 50px;
+    margin: 0%;
+}
+
+.contain-text p{
+    margin: 5px 0px 30px 0px;
+    font-size: 20px;
+}
+
+.contain-text.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.vi {
+    visibility: hidden;
+}
+
+
+.item img {
+    filter: brightness(0.6);
+}
+
+.icon1 {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.buttons button:hover .icon1 {
+    transform: scale(1.2);
+    filter: saturate(0%); /* Desatura la imagen para hacerla blanca */
+    cursor: pointer;
+}
+
+.slider{
+    width: auto;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1.5s;
+}
+.slider .list img{
+    width: 1400px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+
+
+  /* << CARRUCEL DE IMAGENES  */
+
+
+.pc-grid {
+    display: grid; 
+
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 0px;
+    height: 500px;
+    margin: 40px 20px 40px 20px;
+}
+
+.movil-grid {
+    display: none;
+}
+
+#item-0 {
+    border-radius: 10px;
+    margin: 15px;
+
+    grid-row: 1/3;
+
+    background-image: url(../img/medico.jpg);
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+#item-1 {
+    border-radius: 10px;
+    margin: 15px;
+
+    grid-row: 1/2;
+    background-image: url(../img/img1.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+
+#item-2 {
+    border-radius: 10px;
+    margin: 15px;
+
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+#item-2 h3 {
+    margin: 0 0 5px 0;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+    text-align: center;
+}
+
+/* MENU */
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 9999; 
+    position: absolute;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+/* MENU DESPLEGABLE */
+.menu li{
+    margin: 30px 0px 5px 0px;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    top: 0%;
+    gap: 10px;
+    width: 25%;
+    right: 0%;
+    height: 100%;
+    position: fixed;
+    background-color: #ffffff; /* Ajusta el color de fondo del menú */
+    padding: 50px 10px 10px 10px;
+    z-index: 9990; 
+    text-align: center;
+    
+}
+
+.filtroMenu {
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.699);
+    z-index: 990;
+    position: fixed;
+    display: none;
+}
+
+.alerta {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar horizontal y verticalmente */
+    width: 70%; /* Ancho fijo */
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: 2px solid white; /* Borde de 2px de ancho y color blanco */
+    border-radius: 5px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+/* /////////////////////////////////RESPONSIVE///////////////////////////// */
+
+
+@media screen and (min-width: 965px) {
+    .menu {
+    visibility: hidden;
+    }
+
+    .filtroMenu {
+    visibility: hidden;
+    }
+}
+
+@media (max-height: 355px){
+    .menu{
+        position: absolute;
+        height: 370%;
+    }
+}
+
+@media screen and (max-width: 965px){
+
+    .slider{
+        height: 400px;
+    }
+
+    .media-menu{
+        display: none;
+    }
+
+    .menu {
+        width: 35%;
+    }
+
+
+    
+    .hamburger {
+        max-width: 0%;
+        display: block;
+        right: 60px;
+        margin: 20px 0px 0px 0px;
+
+    }
+
+    nav {
+        max-width: 85%;
+    }
+
+    .contain-text {
+        top: 330px;
+    }
+
+    .icon1 {
+        max-width: 60px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .slider{
+        height: 330px;
+    }
+
+    .menu {
+        width: 40%;
+    }
+
+    .contain-text h3{
+        font-size: 35px;
+    }
+
+    .contain-text p{
+        font-size: 15px;
+    }
+
+    .pc-grid {
+        height: 400px;
+    }
+
+    .pc-grid div p{
+        font-size: 12px;
+    }
+
+    .pc-grid div h3{
+        font-size: 20px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    .pc-grid #item-0, #item-1, #item-2, #item-3{
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .slider{
+        height: 285px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .icon1 {
+        max-width: 40px;
+        height: auto;
+    }
+
+    .pc-grid div h3{
+        font-size: 15px;
+    }
+
+    .pc-grid div p{
+        font-size: 10px;
+    }
+
+    .pc-grid {
+        height: 320px;
+    }
+
+    nav {
+        max-width: 70%;
+    }
+
+    .slider{
+        height: 240px;
+    }
+
+    .contain-text h3{
+        font-size: 20px;
+    }
+
+    .contain-text p{
+        font-size: 14px;
+    }
+
+    .contain-text {
+        top: 280px;
+    }
+
+}
+
+@media screen and (max-width: 412px) {
+
+    .slider{
+        height: 190px;
+    }
+
+    .contain-text{
+        top: 260px;
+    }
+    .pc-grid {
+        display: none;
+    }
+
+    .movil-grid {
+
+        display: grid; 
+
+        grid-template-rows: 1fr 1fr 30%;
+        grid-template-columns: 1fr;
+        
+        gap: 0px;
+        height: 600px;
+        margin: 10px;
+    }
+
+    #item-0 {
+        margin: 10px;
+    
+        grid-row: 1/1;
+    }
+    
+    #item-1 {
+        margin: 10px;
+    
+        grid-row: 2/2;
+    }
+    
+    #item-2 {
+        margin: 10px;
+    
+        grid-row: 3/3;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .slider{
+        height: 150px;
+    }
+    .logo {
+        width: 160px; 
+        height: auto; 
+    }
+
+    .contain-text{
+        top: 250px;
+    }
+}

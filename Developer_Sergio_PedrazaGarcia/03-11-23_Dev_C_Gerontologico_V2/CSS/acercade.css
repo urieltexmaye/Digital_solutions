@@ -1,0 +1,141 @@
+body{
+    font-family: Montserrat;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas de igual tamaño */
+    grid-gap: 25px; /* espacio entre las celdas */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.mision, .vision {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Centra el contenido horizontalmente */
+    border-radius: 20px 20px 20px 20px; /* Bordes curvados solo del lado izquierdo */
+}
+h1{
+    color: white;
+}
+h2, h4{
+    color: white;
+}
+
+.iframe-container {
+    grid-column: span 2; /* Hace que el iframe ocupe las 2 columnas */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+iframe {
+    width: 1000px; /* Ajusta según tus necesidades */
+    height: 350px; /* Ajusta según tus necesidades */
+}
+/*Ms info*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 15px;
+
+    background-color: #2285ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .info {
+    display: none;
+    justify-content: center;
+
+    width: 1000%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  /*Horario*/
+  .horario {
+    max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.hora {
+    font-weight: bold;
+}
+
+.actividad {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .horario {
+        max-width: 90%; /* Hacerlo responsivo al 100% en dispositivos pequeños */
+        border-radius: 10px;
+    }
+}
+/* Para dispositivos móviles */
+@media (max-width: 1050px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* 1 columna para móviles */
+  }
+  .contenedor{
+    max-width: 90%;
+  }
+  .info{
+    max-width: 90%;
+  }
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 columna para móviles */
+    }
+    .contenedor{
+      max-width: 90%;
+    }
+    .info{
+      max-width: 90%;
+    }
+}
+@media (max-width: 390px) {
+
+  .contenedor{
+    max-width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .info{
+    max-width: 90%;
+  }
+}

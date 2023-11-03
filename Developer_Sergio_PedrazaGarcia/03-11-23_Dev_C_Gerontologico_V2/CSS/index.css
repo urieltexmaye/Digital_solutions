@@ -1,0 +1,43 @@
+
+/* Estilos en línea para simplificar, puedes moverlos a tu archivo CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fafafa;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header a {
+    color: #1a1919;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    max-width: 200px; /* Ajusta el tamaño de tu logo */
+}
+
+.carrousel-slider {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carrousel-slider img {
+    max-width: 100%; /* Ajusta el tamaño de las imágenes del carrusel */
+}
+
+.carousel-nav {
+    margin-top: 10px;
+}

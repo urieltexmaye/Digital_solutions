@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #005187;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #4eb1d2;
+    color: white;
+}
+
+tr {
+    color: white;
+}
+
+.btn-group {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #B7DCFF;
+}
+
+.btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+table.small {
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+
+
+/* Estilos para el botón de generar PDF */
+.btnPDF {
+    background-color: #f35954;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    text-transform: uppercase; /* Convertir a mayúsculas */
+}
+
+.btnPDF:hover {
+    background-color: #001f3f; /* Cambiar color al pasar el mouse */
+}
+
+
+.t1 {
+    width: 500px;
+    margin: 0 auto;
+}
